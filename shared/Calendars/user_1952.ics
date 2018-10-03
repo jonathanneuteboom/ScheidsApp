@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Hester Versluis
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Hester Versluis
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20170410T132201CEST-9443DMrWVM@www.skcvolleybal.nl
+DTSTAMP:20170410T112201Z
+DESCRIPTION:SKC DS 16 - VCO DS 4<br>3000D4H LE
+DTSTART;TZID=Europe/Amsterdam:20170414T213000
+DTEND;TZID=Europe/Amsterdam:20170414T233000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

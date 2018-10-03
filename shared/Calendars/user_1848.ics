@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Lisanne Labuschagne
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Lisanne Labuschagne
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20180221T130800CET-8435RclvZf@www.skcvolleybal.nl
+DTSTAMP:20180221T120800Z
+DESCRIPTION:SKC DS 14 - Waterlanders DS 5<br>3000D4G LI
+DTSTART;TZID=Europe/Amsterdam:20180309T213000
+DTEND;TZID=Europe/Amsterdam:20180309T233000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+BEGIN:VEVENT
+UID:20180221T130800CET-8439zI9p09@www.skcvolleybal.nl
+DTSTAMP:20180221T120800Z
+DESCRIPTION:SKC HS 5 - VCS HS 2<br>3000H3M HG
+DTSTART;TZID=Europe/Amsterdam:20180406T213000
+DTEND;TZID=Europe/Amsterdam:20180406T233000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

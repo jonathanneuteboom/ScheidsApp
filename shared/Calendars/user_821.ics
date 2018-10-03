@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Nanouk Schipper
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Nanouk Schipper
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20160306T213318CET-5150K9cuvr@www.skcvolleybal.nl
+DTSTAMP:20160306T203318Z
+DESCRIPTION:SKC DS 8 - Punch DS 8<br>3000D4I CB
+DTSTART;TZID=Europe/Amsterdam:20160401T213000
+DTEND;TZID=Europe/Amsterdam:20160401T233000
+LOCATION:Universitair SC<br>Einsteinweg 6<br>2333CC Leiden
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

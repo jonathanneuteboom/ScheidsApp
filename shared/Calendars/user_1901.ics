@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Myrèse Witkamp
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Myrèse Witkamp
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20161010T092814CEST-3264Jpe0k8@www.skcvolleybal.nl
+DTSTAMP:20161010T072814Z
+DESCRIPTION:SKC DS 16 - Scarabee DS 3<br>3000D4H LC
+DTSTART;TZID=Europe/Amsterdam:20161118T213000
+DTEND;TZID=Europe/Amsterdam:20161118T233000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+BEGIN:VEVENT
+UID:20161010T092814CEST-3266JG9MU8@www.skcvolleybal.nl
+DTSTAMP:20161010T072814Z
+DESCRIPTION:SKC DS 14 - Kratos '08 DS 8<br>3000D4J GA
+DTSTART;TZID=Europe/Amsterdam:20161104T213000
+DTEND;TZID=Europe/Amsterdam:20161104T233000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

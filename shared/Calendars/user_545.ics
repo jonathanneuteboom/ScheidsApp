@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Judith Hof
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Judith Hof
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20180214T160027CET-2993XVB6TV@www.skcvolleybal.nl
+DTSTAMP:20180214T150027Z
+DESCRIPTION:SKC HS 3 - VV Haaglanden HS 3<br>3000H2I LI
+DTSTART;TZID=Europe/Amsterdam:20180217T110000
+DTEND;TZID=Europe/Amsterdam:20180217T130000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

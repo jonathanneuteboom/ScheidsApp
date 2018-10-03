@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Channah de Ruiter
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Channah de Ruiter
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20160116T202508CET-0855UAkZG4@www.skcvolleybal.nl
+DTSTAMP:20160116T192508Z
+DESCRIPTION:SKC DS10 - Leython DC DS 7<br>3000D4G CH
+DTSTART;TZID=Europe/Amsterdam:20160205T193000
+DTEND;TZID=Europe/Amsterdam:20160205T213000
+LOCATION:Universitair SC<br>Einsteinweg 6<br>2333CC Leiden
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

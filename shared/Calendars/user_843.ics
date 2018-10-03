@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Nils Out
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Nils Out
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20170220T133000CET-1457woLu1t@www.skcvolleybal.nl
+DTSTAMP:20170220T123000Z
+DESCRIPTION:SKC HS 7 - Setumup HS 2<br>3000H4A BG
+DTSTART;TZID=Europe/Amsterdam:20170318T180000
+DTEND;TZID=Europe/Amsterdam:20170318T200000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

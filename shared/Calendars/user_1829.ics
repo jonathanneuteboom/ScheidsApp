@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Richard Dang
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Richard Dang
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20171017T164915CEST-3471rl1gAv@www.skcvolleybal.nl
+DTSTAMP:20171017T144915Z
+DESCRIPTION:SKC HS 6 - Scarabee HS 4<br>3000H4G FK
+DTSTART;TZID=Europe/Amsterdam:20171124T213000
+DTEND;TZID=Europe/Amsterdam:20171124T233000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+BEGIN:VEVENT
+UID:20171017T164915CEST-3473KO9277@www.skcvolleybal.nl
+DTSTAMP:20171017T144915Z
+DESCRIPTION:SKC DS 13 - VCS DS 4<br>3000D4G DE
+DTSTART;TZID=Europe/Amsterdam:20171027T193000
+DTEND;TZID=Europe/Amsterdam:20171027T213000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Maartje Kanaar
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Maartje Kanaar
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20170220T135547CET-02673VM6T4@www.skcvolleybal.nl
+DTSTAMP:20170220T125547Z
+DESCRIPTION:SKC DS 14 - VV Haaglanden DS 7<br>3000D4J GK
+DTSTART;TZID=Europe/Amsterdam:20170304T160000
+DTEND;TZID=Europe/Amsterdam:20170304T180000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+BEGIN:VEVENT
+UID:20170220T135547CET-0271RjmfSl@www.skcvolleybal.nl
+DTSTAMP:20170220T125547Z
+DESCRIPTION:SKC HS 7 - In Up Go HS 2<br>3000H4A BL
+DTSTART;TZID=Europe/Amsterdam:20170401T180000
+DTEND;TZID=Europe/Amsterdam:20170401T200000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Jurrian Meijerhof
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Jurrian Meijerhof
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20171127T185452CET-8961CcmTWR@www.skcvolleybal.nl
+DTSTAMP:20171127T175452Z
+DESCRIPTION:SKC HS 2 - Aspasia HS 2<br>3000H1E CE
+DTSTART;TZID=Europe/Amsterdam:20180209T193000
+DTEND;TZID=Europe/Amsterdam:20180209T213000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

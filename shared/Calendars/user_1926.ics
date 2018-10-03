@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Rosanne Verburgh
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Rosanne Verburgh
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20170326T220544CEST-9760UG5vPd@www.skcvolleybal.nl
+DTSTAMP:20170326T200544Z
+DESCRIPTION:SKC DS 6 - In Up Go DS 2<br>3000D3M KD
+DTSTART;TZID=Europe/Amsterdam:20170331T193000
+DTEND;TZID=Europe/Amsterdam:20170331T213000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

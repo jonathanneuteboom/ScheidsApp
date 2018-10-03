@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Jari Louter
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Jari Louter
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20180313T202525CET-07272tDgdt@www.skcvolleybal.nl
+DTSTAMP:20180313T192525Z
+DESCRIPTION:SKC DS 2 - VVV Delta DS 1<br>3000D1E IH
+DTSTART;TZID=Europe/Amsterdam:20180317T160000
+DTEND;TZID=Europe/Amsterdam:20180317T180000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+BEGIN:VEVENT
+UID:20180313T202525CET-0730GmW8fi@www.skcvolleybal.nl
+DTSTAMP:20180313T192525Z
+DESCRIPTION:SKC HS 2 - Donar HS 1<br>3000H1E CB
+DTSTART;TZID=Europe/Amsterdam:20180323T193000
+DTEND;TZID=Europe/Amsterdam:20180323T213000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+BEGIN:VEVENT
+UID:20180313T202525CET-0731wHMX5u@www.skcvolleybal.nl
+DTSTAMP:20180313T192525Z
+DESCRIPTION:SKC HS 3 - PQV Pijl Solutions HS 1<br>3000H2I LB
+DTSTART;TZID=Europe/Amsterdam:20180331T183000
+DTEND;TZID=Europe/Amsterdam:20180331T203000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Suzanne Wiercx
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Suzanne Wiercx
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20161222T114112CET-4508ZcvTe5@www.skcvolleybal.nl
+DTSTAMP:20161222T104112Z
+DESCRIPTION:SKC DS 12 - NOVO DS 4<br>3000D4H BF
+DTSTART;TZID=Europe/Amsterdam:20170210T213000
+DTEND;TZID=Europe/Amsterdam:20170210T233000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

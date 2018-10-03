@@ -1,0 +1,30 @@
+<table>
+  <tr ng-repeat="(datum, tijden) in overzicht">
+    <td>
+      <table>
+        <tr ng-repeat="(tijd, wedstrijden) in tijden" class="data-table">
+          <td>
+            <div>{{datum}}@{{tijd}}</div>
+          </td>
+          <td>
+            <table>
+              <tr ng-repeat="wedstrijd in wedstrijden">
+                <td>
+                  {{wedstrijd.teams}}
+                </td>
+                <td>
+                  <div class="card bgc-green-600 tc-white-1 p" ng-show="wedstrijd.jij == 'waar'">
+                    {{scheidsrechters[wedstrijd.scheids].name}}
+                  </div>
+                   <div class="card bgc-indigo-500 tc-white-1 p" ng-show="wedstrijd.scheids != null && wedstrijd.jij != 'waar'">
+                    {{scheidsrechters[wedstrijd.scheids].name}}
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

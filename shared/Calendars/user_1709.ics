@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Tamara Ubink
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Tamara Ubink
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20170220T153016CET-3606kBALNu@www.skcvolleybal.nl
+DTSTAMP:20170220T143016Z
+DESCRIPTION:SKC DS 10 - NOVO DS 4<br>3000D4H KF
+DTSTART;TZID=Europe/Amsterdam:20170310T193000
+DTEND;TZID=Europe/Amsterdam:20170310T213000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+BEGIN:VEVENT
+UID:20170220T153016CET-3609dkWF0e@www.skcvolleybal.nl
+DTSTAMP:20170220T143016Z
+DESCRIPTION:SKC DS 11 - Donar DS 1<br>3000D4G BA
+DTSTART;TZID=Europe/Amsterdam:20170407T213000
+DTEND;TZID=Europe/Amsterdam:20170407T233000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

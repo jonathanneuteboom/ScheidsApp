@@ -1,0 +1,24 @@
+<div flex-item="6" class="import_div">
+  <span class="fs-title display-block mb">Items die je kunt importeren</span>
+  <div class="divider divider--dark"></div>
+  <ul>
+    <li class="list-row list-row--has-separator">
+      <div>
+        <a href="{{ical_file}}"
+           ng-class="['btn', 'btn--m', 'btn--green', 'btn--raised', 'm+', {'btn--is-disabled': ical_file == null}]" 
+           lx-ripple
+           target="_blank">
+           Google-calendar link (wordt automatisch bijgewerkt)
+        </a>
+      </div>
+    </li>
+    <li class="list-row list-row--has-separator">
+      <div>
+        <a href="{{xlsx}}" 
+           ng-class="['btn', 'btn--m', 'btn--green', 'btn--raised', 'm+', {'btn--is-disabled': xlsx == null}]" 
+           lx-ripple 
+           download>Excel bestand van het hele rooster</a>
+      </div>
+    </li>
+  </ul>
+</div>

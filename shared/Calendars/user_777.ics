@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Anne Willemsen
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Anne Willemsen
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20180221T132731CET-6369SHLRz5@www.skcvolleybal.nl
+DTSTAMP:20180221T122731Z
+DESCRIPTION:SKC HS 4 - Donar HS 2<br>3000H3M AC
+DTSTART;TZID=Europe/Amsterdam:20180406T213000
+DTEND;TZID=Europe/Amsterdam:20180406T233000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+BEGIN:VEVENT
+UID:20180221T132731CET-6371SVbxmJ@www.skcvolleybal.nl
+DTSTAMP:20180221T122731Z
+DESCRIPTION:SKC HS 2 - Monza HS 2<br>3000H1E CK
+DTSTART;TZID=Europe/Amsterdam:20180414T180000
+DTEND;TZID=Europe/Amsterdam:20180414T200000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

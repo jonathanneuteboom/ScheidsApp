@@ -1,0 +1,45 @@
+<table>
+    <tr ng-repeat="(date, wedstrijddag) in zaalwachtschema">
+        <td>
+            <table>
+                <tr>
+                    <td>
+                        <div>{{date}}</div>
+                    </td>
+                    <td>
+                        <table style="margin: 15px;">
+                            <tr ng-repeat="team in wedstrijddag.teams">
+                                <td>
+                                    <font ng-if="team.wvdw == true" style="font-weight:bold;">{{team.teams}}</font>
+                                    <a ng-if="team.wvdw == false" href="" ng-click="SetWvdw(date, team.code)">{{team.teams}}</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td style="width :300px;">
+            <lx-select ng-model="wedstrijddag.zaalwacht" change="saveZaalwacht(date, time, code, newValue)" placeholder="Kies team..."
+                choices="zaalwachtoverzicht" floating-label>
+                <lx-select-selected>
+                    {{ $selected.team }}
+                </lx-select-selected>
+                <lx-select-choices>
+                    {{ $choice.team + ' (' + $choice.zaalwacht + ')' }}
+                </lx-select-choices>
+            </lx-select>
+        </td>
+        <td style="padding: 10px;">
+            <div ng-show="wedstrijddag.zaalwacht == null" class="card bgc-red-500 tc-white-1 p">
+                Nog geen zaalwacht...
+            </div>
+            <div ng-show="wedstrijddag.zaalwacht != null">
+                <button class="btn btn--lg btn--raised btn--white delete-button" ng-click="delZaalwacht(date, wedstrijddag.zaalwacht.id)"
+                    lx-ripple>
+                    <i class="mdi mdi-delete"></i>
+                </button>
+            </div>
+        </td>
+    </tr>
+</table>

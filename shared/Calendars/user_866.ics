@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Maaike Oelen
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Maaike Oelen
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20160307T205236CET-52852xlDed@www.skcvolleybal.nl
+DTSTAMP:20160307T195236Z
+DESCRIPTION:SKC DS11 - Kratos '08 DS 8<br>3000D4J Ba
+DTSTART;TZID=Europe/Amsterdam:20160319T110000
+DTEND;TZID=Europe/Amsterdam:20160319T130000
+LOCATION:Universitair SC<br>Einsteinweg 6<br>2333CC Leiden
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+BEGIN:VEVENT
+UID:20160307T205236CET-52911r9r9Z@www.skcvolleybal.nl
+DTSTAMP:20160307T195236Z
+DESCRIPTION:SKC DS 9 - Punch DS12<br>3000D4J FH
+DTSTART;TZID=Europe/Amsterdam:20160415T193000
+DTEND;TZID=Europe/Amsterdam:20160415T213000
+LOCATION:Universitair SC<br>Einsteinweg 6<br>2333CC Leiden
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

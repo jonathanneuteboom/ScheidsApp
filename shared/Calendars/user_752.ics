@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Lieke Meijer
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Lieke Meijer
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20170220T133352CET-0249rm70RU@www.skcvolleybal.nl
+DTSTAMP:20170220T123352Z
+DESCRIPTION:SKC HS 6 - Waterlanders HS 4<br>3000H4G FK
+DTSTART;TZID=Europe/Amsterdam:20170324T193000
+DTEND;TZID=Europe/Amsterdam:20170324T213000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Anne Gotink
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Anne Gotink
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20170220T170202CET-8466xJUGLf@www.skcvolleybal.nl
+DTSTAMP:20170220T160202Z
+DESCRIPTION:SKC DS 5 - Leython DC DS 7<br>3000D3N AL
+DTSTART;TZID=Europe/Amsterdam:20170421T193000
+DTEND;TZID=Europe/Amsterdam:20170421T213000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

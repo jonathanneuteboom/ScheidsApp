@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Alien Wiersma
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Alien Wiersma
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20160306T213317CET-82070TnJdz@www.skcvolleybal.nl
+DTSTAMP:20160306T203317Z
+DESCRIPTION:SKC HS 4 - Kratos '08 HS 7<br>3000H3N BD
+DTSTART;TZID=Europe/Amsterdam:20160318T193000
+DTEND;TZID=Europe/Amsterdam:20160318T213000
+LOCATION:Universitair SC<br>Einsteinweg 6<br>2333CC Leiden
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+BEGIN:VEVENT
+UID:20160306T213317CET-8211VgcwA9@www.skcvolleybal.nl
+DTSTAMP:20160306T203317Z
+DESCRIPTION:SKC HS 3 - Waterlanders HS 3<br>3000H3M BL
+DTSTART;TZID=Europe/Amsterdam:20160408T213000
+DTEND;TZID=Europe/Amsterdam:20160408T233000
+LOCATION:Universitair SC<br>Einsteinweg 6<br>2333CC Leiden
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,34 @@
+.error {
+  background-color:
+}
+
+.dialogclass {
+  width: 100%;
+}
+
+.alternating.tr:nth-child(odd) {
+  background-color: white;
+}
+
+.alternating.tr:nth-child(even) {
+  background-color: #EFEFEF;
+}
+
+.pad20pxleft {
+  padding-left: 20px;
+}
+
+.gcal_link {
+  padding: 5px;
+  margin: 5px;
+}
+
+.import_div {
+  padding: 5px;
+  margin: 5px;
+}
+
+.delete-button {
+  width: 41px;
+  height: 31px;
+}

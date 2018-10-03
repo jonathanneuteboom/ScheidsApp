@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Lisa le Feber
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Lisa le Feber
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20160306T220606CET-3134U32j1U@www.skcvolleybal.nl
+DTSTAMP:20160306T210606Z
+DESCRIPTION:SKC DS 9 - Kalinko DS11<br>3000D4J fG
+DTSTART;TZID=Europe/Amsterdam:20160312T180000
+DTEND;TZID=Europe/Amsterdam:20160312T200000
+LOCATION:Universitair SC<br>Einsteinweg 6<br>2333CC Leiden
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+BEGIN:VEVENT
+UID:20160306T220606CET-3139ibisfM@www.skcvolleybal.nl
+DTSTAMP:20160306T210606Z
+DESCRIPTION:SKC HS 3 - Gemini<br>3000H3M BD
+DTSTART;TZID=Europe/Amsterdam:20160325T213000
+DTEND;TZID=Europe/Amsterdam:20160325T233000
+LOCATION:De Bloemerd<br>Bloemerd 1<br>2353BZ Leiderdorp
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

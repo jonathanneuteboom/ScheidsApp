@@ -1,0 +1,49 @@
+<table>
+  <tr ng-repeat="(datum, tijdsloten) in data">
+    <td>
+      <table>
+        <tr ng-repeat="(tijdslot, wedstrijden) in tijdsloten" class="data-table">
+          <td>
+            <div>{{wedstrijden[getFirstKey(wedstrijden)].date_string}}@{{tijdslot}}</div>
+          </td>
+          <td>
+            <div class="card bgc-red-400 tc-white-1 p" ng-show="wedstrijden.overlap.class == 'impossible'">
+              {{wedstrijden.overlap.teams}}@{{wedstrijden.overlap.time}}
+            </div>
+            <div class="card bgc-yellow-800 tc-white-1 p" ng-show="wedstrijden.overlap.class == 'maybe'">
+              {{wedstrijden.overlap.teams}}@{{wedstrijden.overlap.time}}
+            </div>
+            <div class="card bgc-green-600 tc-white-1 p" ng-show="wedstrijden.overlap.class == 'possible'">
+              {{wedstrijden.overlap.teams}}@{{wedstrijden.overlap.time}}
+            </div>
+            <table>
+              <tr ng-repeat="(index, wedstrijd) in wedstrijden track by $index" ng-hide="index=='overlap' ||index=='remarks'||index=='availability'">
+                <td>
+                  {{wedstrijd.teams}}
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <button ng-class="[{'btn--green': wedstrijden.availability=='Ja'}, {'btn--white': !wedstrijden.availability=='Ja'}]" class="btn btn--s btn--raised"
+              ng-click="SaveAvailability(datum, tijdslot, 'Ja')" lx-ripple>Ja</button>
+            <button ng-class="[{'btn--green': wedstrijden.availability=='Nee'}, {'btn--white': !wedstrijden.availability=='Nee'}]" class="btn btn--s btn--raised"
+              ng-click="SaveAvailability(datum, tijdslot, 'Nee')" lx-ripple>Nee</button>
+            <button ng-class="[{'btn--green': wedstrijden.availability=='Misschien'}, {'btn--white': !wedstrijden.availability=='Misschien'}]"
+              class="btn btn--s btn--raised" ng-click="SaveAvailability(datum, tijdslot, 'Misschien')" lx-ripple>Misschien</button>
+            <button class="btn btn--s btn--raised btn--white delete-button" ng-click="SaveAvailability(datum, tijdslot, '')" lx-ripple>
+              <i class="mdi mdi-delete"></i>
+            </button>
+          </td>
+          <td>
+            <div flex-item>
+              <lx-text-field label="Opmerkingen">
+                <textarea ng-model="wedstrijden.remarks" ng-blur="Saveremarks(datum, tijdslot)"></textarea>
+              </lx-text-field>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

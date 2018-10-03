@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Koen Bongenaar
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Koen Bongenaar
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20180221T132330CET-0017KOUc0W@www.skcvolleybal.nl
+DTSTAMP:20180221T122330Z
+DESCRIPTION:SKC DS 7 - Castellum DS 2<br>3000D3M LF
+DTSTART;TZID=Europe/Amsterdam:20180302T193000
+DTEND;TZID=Europe/Amsterdam:20180302T213000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+BEGIN:VEVENT
+UID:20180221T132330CET-0020FFfL7O@www.skcvolleybal.nl
+DTSTAMP:20180221T122330Z
+DESCRIPTION:SKC HS 8 - RVV HS 3<br>3000H4G LG
+DTSTART;TZID=Europe/Amsterdam:20180414T160000
+DTEND;TZID=Europe/Amsterdam:20180414T180000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Lotte de Bruijn
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Lotte de Bruijn
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20180221T132329CET-9095WcFV1n@www.skcvolleybal.nl
+DTSTAMP:20180221T122329Z
+DESCRIPTION:SKC DS 13 - GSC DS 4<br>3000D4G DC
+DTSTART;TZID=Europe/Amsterdam:20180309T213000
+DTEND;TZID=Europe/Amsterdam:20180309T233000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+BEGIN:VEVENT
+UID:20180221T132329CET-9098vf7IWg@www.skcvolleybal.nl
+DTSTAMP:20180221T122329Z
+DESCRIPTION:SKC DS 13 - NOVO DS 5<br>3000D4G DJ
+DTSTART;TZID=Europe/Amsterdam:20180413T213000
+DTEND;TZID=Europe/Amsterdam:20180413T233000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

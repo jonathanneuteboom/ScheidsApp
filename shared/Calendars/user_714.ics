@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Anne Tilanus
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Anne Tilanus
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20151003T165615CEST-6143awOOwH@www.skcvolleybal.nl
+DTSTAMP:20151003T145615Z
+DESCRIPTION:SKC DS 5 - Scarabee DS 2<br>3000D3M GC
+DTSTART;TZID=Europe/Amsterdam:20151016T193000
+DTEND;TZID=Europe/Amsterdam:20151016T213000
+LOCATION:Universitair SC<br>Einsteinweg 6<br>2333CC Leiden
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

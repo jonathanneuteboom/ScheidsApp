@@ -1,0 +1,192 @@
+<button class="btn btn--m btn--green btn--raised m+" ng-show="overzicht != null" ng-click="SendMailAndWhatsapps()" lx-ripple>Verstuur mail/whatsapp berichten</button>
+<button class="btn btn--m btn--green btn--raised m+" ng-show="overzicht != null" ng-click="openGeflotenPerTeamDialog()" lx-ripple>Gefloten per team</button>
+<table>
+  <tr ng-repeat="(datum, tijden) in overzicht">
+    <td>
+      <table>
+        <tr ng-repeat="(tijd, codes) in tijden" class="data-table">
+          <td>
+            <div>{{datum}}@{{tijd}}</div>
+          </td>
+          <td>
+            <table>
+              <tr ng-repeat="(code, wedstrijd) in codes">
+                <td>
+                  {{wedstrijd.teams}}
+                  <i>({{code}})</i>
+                </td>
+                <td ng-show="wedstrijd.scheids != null">
+                  <div class="tc-white-1" flex-container="row">
+                    <div class="card bgc-indigo-500 tc-white-1 p">
+                    {{scheidsrechters[wedstrijd.scheids].name}}
+                    </div>
+                    <button ng-class="['btn', 'btn--m', 'btn--raised', 'btn--white']" ng-click="delReferee(datum, tijd, code, wedstrijd.scheids)" lx-ripple><i class="mdi mdi-delete"></i></button>
+                  </div>
+                </td>
+                <td ng-show="wedstrijd.scheids == null">
+                  <div class="card bgc-red-500 tc-white-1 p">
+                    Nog geen scheids...
+                  </div>
+                </td>
+                <td>
+                  <button class="btn btn--m btn--green btn--raised m+" ng-click="openRefereeDialog(datum, tijd, code)" lx-ripple>Selecteer scheidsrechter</button>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<lx-dialog class="dialog dialog--l" id="refereeDialog" auto-close="true" onclose="closingDialog()" onscrollend="scrollEndDialog()">
+  <div class="dialog__header">
+    <div class="toolbar bgc-light-blue-500 pl++">
+      <span class="toolbar__label tc-white fs-title">
+        Kies de scheidsrechter voor {{activeMatch.teams}}
+      </span>
+    </div>
+  </div>
+
+  <div class="dialog__content">
+    <table ng-class="{even: $even, odd: $odd}" class="dialogclass">
+      <thead>
+        <tr class="data-table">
+          <th>Keuze</th>
+          <th>Code</th>
+          <th>Naam</th>
+          <th>Opmerking</th>
+          <th>#eerder gefloten</th>
+          <th>Team (#team gefloten)</th>
+        </tr>
+      </thead>
+        <tr ng-repeat="people in activeMatch.Ja" class="ja">
+          <td class="pad20pxleft">
+            Ja
+          </td>
+          <td>
+            <div ng-class="[
+                 {'card bgc-teal-500 tc-white-1 p': scheidsrechters[people.user_id].scheidsrechterscode == 'V1'}, 
+                 {'card bgc-teal-700 tc-white-1 p': scheidsrechters[people.user_id].scheidsrechterscode == 'V2'}, 
+                 {'card bgc-teal-900 tc-white-1 p': scheidsrechters[people.user_id].scheidsrechterscode == 'V3'}, 
+                 {'card bgc-light-blue-500 tc-white-1 p': scheidsrechters[people.user_id].scheidsrechterscode == 'V4'}, 
+                 {'card bgc-light-blue-700 tc-white-1 p': scheidsrechters[people.user_id].scheidsrechterscode == 'V5'}, 
+                 {'card bgc-light-blue-900 tc-white-1 p': scheidsrechters[people.user_id].scheidsrechterscode == 'V6'}, 
+               ]">
+              {{scheidsrechters[people.user_id].scheidsrechterscode}}
+            </div>
+          </td>
+          <td>
+            <button class="btn btn--m btn--green btn--raised m+" ng-click="saveReferee(people.user_id)" lx-ripple>{{scheidsrechters[people.user_id].name}}</button>
+          </td>
+          <td>
+            {{people.remarks}}
+          </td>
+          <td>
+            {{scheidsrechters[people.user_id].count}}            
+          </td>
+          <td>
+            {{teamPerScheids[people.user_id]}} <div ng-show="teamPerScheids[people.user_id] != null && geflotenPerTeam[teamPerScheids[people.user_id]] != null">({{geflotenPerTeam[teamPerScheids[people.user_id]]}})</div>
+          </td>
+        </tr>
+        <tr ng-repeat="people in activeMatch.Misschien" class="misschien">
+          <td class="pad20pxleft">
+            Misschien
+          </td>
+          <td>
+            <div ng-class="[
+                 {'card bgc-teal-500 tc-white-1 p': scheidsrechters[people.user_id].scheidsrechterscode == 'V1'}, 
+                 {'card bgc-teal-700 tc-white-1 p': scheidsrechters[people.user_id].scheidsrechterscode == 'V2'}, 
+                 {'card bgc-teal-900 tc-white-1 p': scheidsrechters[people.user_id].scheidsrechterscode == 'V3'}, 
+                 {'card bgc-light-blue-500 tc-white-1 p': scheidsrechters[people.user_id].scheidsrechterscode == 'V4'}, 
+                 {'card bgc-light-blue-700 tc-white-1 p': scheidsrechters[people.user_id].scheidsrechterscode == 'V5'}, 
+                 {'card bgc-light-blue-900 tc-white-1 p': scheidsrechters[people.user_id].scheidsrechterscode == 'V6'}, 
+               ]">
+              {{scheidsrechters[people.user_id].scheidsrechterscode}}
+            </div>
+          </td>
+          <td>
+            <button class="btn btn--m btn--green btn--raised m+" ng-click="saveReferee(people.user_id)" lx-ripple>{{scheidsrechters[people.user_id].name}}</button>
+          </td>
+          <td>
+            {{people.remarks}}
+          </td>
+          <td>
+            {{scheidsrechters[people.user_id].count}}
+          </td>
+          <td>
+            {{teamPerScheids[people.user_id]}} <div ng-show="teamPerScheids[people.user_id] != null && geflotenPerTeam[teamPerScheids[people.user_id]] != null">({{geflotenPerTeam[teamPerScheids[people.user_id]]}})</div>
+          </td>
+        </tr>
+        <tr ng-repeat="people_id in activeMatch['Nog niet ingevuld']" class="misschien" ng-show="show_all">
+          <td class="pad20pxleft">
+            Nog niet ingevuld
+          </td>
+          <td>
+            <div ng-class="[
+                 {'card bgc-teal-500 tc-white-1 p': scheidsrechters[people.user_id].scheidsrechterscode == 'V1'}, 
+                 {'card bgc-teal-700 tc-white-1 p': scheidsrechters[people.user_id].scheidsrechterscode == 'V2'}, 
+                 {'card bgc-teal-900 tc-white-1 p': scheidsrechters[people.user_id].scheidsrechterscode == 'V3'}, 
+                 {'card bgc-light-blue-500 tc-white-1 p': scheidsrechters[people.user_id].scheidsrechterscode == 'V4'}, 
+                 {'card bgc-light-blue-700 tc-white-1 p': scheidsrechters[people.user_id].scheidsrechterscode == 'V5'}, 
+                 {'card bgc-light-blue-900 tc-white-1 p': scheidsrechters[people.user_id].scheidsrechterscode == 'V6'}, 
+               ]">
+              {{scheidsrechters[people.user_id].scheidsrechterscode}}
+            </div>
+          </td>
+          <td>
+            <button class="btn btn--m btn--green btn--raised m+" ng-click="saveReferee(people_id)" lx-ripple>{{scheidsrechters[people_id].name}}</button>
+          </td>
+          <td>
+          
+          </td>
+          <td>
+            {{scheidsrechters[people_id].count}}
+          </td>
+          <td>
+            {{teamPerScheids[people_id]}} <div ng-show="teamPerScheids[people_id] != null && geflotenPerTeam[teamPerScheids[people_id]] != null">({{geflotenPerTeam[teamPerScheids[people_id]]}})</div>
+          </td>
+        </tr>
+      </table>
+  </div>
+  
+  <div class="dialog__actions">
+    <button class="btn btn--m btn--black btn--flat" lx-ripple ng-show="show_all" ng-click="show_all=!show_all" style="float:left;">Minder scheidsrechters</button>
+    <button class="btn btn--m btn--black btn--flat" lx-ripple ng-hide="show_all" ng-click="show_all=!show_all" style="float:left;">Alle scheidsrechters</button>
+    <button class="btn btn--m btn--black btn--flat" lx-ripple lx-dialog-close>Sluiten</button>
+  </div>
+</lx-dialog>
+
+<lx-dialog class="dialog dialog--l" id="geflotenPerTeam" auto-close="true" onclose="closingDialog()" onscrollend="scrollEndDialog()">
+  <div class="dialog__header">
+    <div class="toolbar bgc-light-blue-500 pl++">
+      <span class="toolbar__label tc-white fs-title">
+        Welk team heeft hoe vaak gefloten
+      </span>
+    </div>
+  </div>
+
+  <div class="dialog__content">
+    <table ng-class="{even: $even, odd: $odd}" class="dialogclass">
+      <thead>
+        <tr class="data-table">
+          <th>Team</th>
+          <th># keer gefloten</th>
+        </tr>
+      </thead>
+      <tr ng-repeat="team in teams">
+        <td>
+          <div class="card p">{{team}}</div>
+        </td>
+        <td>
+          <div class="card p" ng-show="geflotenPerTeam[team] != null">{{geflotenPerTeam[team]}}</div>
+          <div class="card p" ng-show="geflotenPerTeam[team] == null">0</div>
+        </td>
+      </tr>
+    </table>
+  </div>  
+  <div class="dialog__actions">
+    <button class="btn btn--m btn--black btn--flat" lx-ripple lx-dialog-close>Sluiten</button>
+  </div>
+</lx-dialog>

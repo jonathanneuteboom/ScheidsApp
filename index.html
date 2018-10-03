@@ -1,0 +1,57 @@
+<html style="background-color: white;">
+
+<head>
+    <link rel="stylesheet" href="/scripts/ScheidsrechtersApp/assets/libs/lumX/lumX-0.3.80/dist/lumx.css">
+    <link rel="stylesheet" href="/scripts/ScheidsrechtersApp/assets/css/global.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+
+    <script src="/scripts/ScheidsrechtersApp/assets/libs/jQuery/jquery-2.1.4.min.js"></script>
+    <script src="/scripts/ScheidsrechtersApp/assets/libs/jQueryUI/jquery-ui.js"></script>
+    <script src="/scripts/ScheidsrechtersApp/assets/libs/Velocity/velocity.min.js"></script>
+    <script src="/scripts/ScheidsrechtersApp/assets/libs/Moment/moment-with-locales.js"></script>
+    <script src="/scripts/ScheidsrechtersApp/assets/libs/Angularjs/angular.js"></script>
+    <script src="/scripts/ScheidsrechtersApp/assets/libs/Angularjs/angular-animate.js"></script>
+    <script src="/scripts/ScheidsrechtersApp/assets/libs/lumX/lumX-0.3.83/dist/lumx.min.js"></script>
+    <script src="/scripts/ScheidsrechtersApp/app.modules.js"></script>
+    <script src="/scripts/ScheidsrechtersApp/app/availability/availability.js"></script>
+    <script src="/scripts/ScheidsrechtersApp/app/schedule/schedule.js"></script>
+    <script src="/scripts/ScheidsrechtersApp/app/make-schedule/make-schedule.js"></script>
+    <script src="/scripts/ScheidsrechtersApp/app/dataexporteren/dataexporteren.js"></script>
+    <script src="/scripts/ScheidsrechtersApp/app/settellers/settellers.js"></script>
+    <script src="/scripts/ScheidsrechtersApp/app/setzaalwacht/setzaalwacht.js"></script>
+</head>
+
+<body>
+
+
+
+
+    <div ng-app="ScheidsApp">
+        <div id="progress" style="position:relative;"></div>
+
+        <lx-tabs indicator="green-200" active-tab="0" layout="inline">
+            <lx-tab heading="Overzicht">
+                <schedule ng-controller="scheduleCtrl"></schedule>
+            </lx-tab>
+            <lx-tab heading="Mijn schema">
+                <availability ng-controller="availabilityCtrl"></availability>
+            </lx-tab>
+            <lx-tab heading="Exporteren">
+                <dataexporteren ng-controller="dataexporterenCtrl"></dataexporteren>
+            </lx-tab>
+            <lx-tab heading="Indelen">
+                <makeschedule ng-controller="make-scheduleCtrl"></makeschedule>
+            </lx-tab>
+            <lx-tab heading="Tellers">
+                <tellers ng-controller="tellersCtrl"></tellers>
+            </lx-tab>
+            <lx-tab heading="Zaalwacht">
+                <zaalwacht ng-controller="zaalwachtCtrl"></zaalwacht>
+            </lx-tab>
+        </lx-tabs>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Pieter van Wolferen
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Pieter van Wolferen
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20180326T175540CEST-0647jaZljb@www.skcvolleybal.nl
+DTSTAMP:20180326T155540Z
+DESCRIPTION:SKC HS 7 - GGV HS 2<br>3000H4H BA
+DTSTART;TZID=Europe/Amsterdam:20180413T193000
+DTEND;TZID=Europe/Amsterdam:20180413T213000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+BEGIN:VEVENT
+UID:20180326T175540CEST-0649jJp2DO@www.skcvolleybal.nl
+DTSTAMP:20180326T155540Z
+DESCRIPTION:SKC DS 5 - Leython DC DS 6<br>3000D3M CK
+DTSTART;TZID=Europe/Amsterdam:20180414T180000
+DTEND;TZID=Europe/Amsterdam:20180414T200000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+BEGIN:VEVENT
+UID:20180326T175540CEST-0650lbXKjJ@www.skcvolleybal.nl
+DTSTAMP:20180326T155540Z
+DESCRIPTION:SKC DS 2 - Inter Rijswijk DS 2<br>3000D1E ID
+DTSTART;TZID=Europe/Amsterdam:20180420T193000
+DTEND;TZID=Europe/Amsterdam:20180420T213000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

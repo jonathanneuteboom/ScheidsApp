@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Fleur Clemens
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Fleur Clemens
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20180214T183442CET-2100n8VIM9@www.skcvolleybal.nl
+DTSTAMP:20180214T173442Z
+DESCRIPTION:SKC DS 9 - Sovicos DS 7<br>3000D4I GF
+DTSTART;TZID=Europe/Amsterdam:20180217T130000
+DTEND;TZID=Europe/Amsterdam:20180217T150000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+BEGIN:VEVENT
+UID:20180214T183442CET-2102tofrSu@www.skcvolleybal.nl
+DTSTAMP:20180214T173442Z
+DESCRIPTION:SKC DS 11 - Waterlanders DS 4<br>3000D4H KD
+DTSTART;TZID=Europe/Amsterdam:20180302T213000
+DTEND;TZID=Europe/Amsterdam:20180302T233000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

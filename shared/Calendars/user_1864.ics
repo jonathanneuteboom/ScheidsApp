@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Gerwin Lubbers
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Gerwin Lubbers
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20160306T213937CET-5755xOdNfC@www.skcvolleybal.nl
+DTSTAMP:20160306T203937Z
+DESCRIPTION:SKC DS11 - SKC DS 9<br>3000D4J Bf
+DTSTART;TZID=Europe/Amsterdam:20160409T110000
+DTEND;TZID=Europe/Amsterdam:20160409T130000
+LOCATION:Universitair SC<br>Einsteinweg 6<br>2333CC Leiden
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+BEGIN:VEVENT
+UID:20160306T213937CET-5762DhxKnU@www.skcvolleybal.nl
+DTSTAMP:20160306T203937Z
+DESCRIPTION:SKC DS 8 - Zovoc DS 6<br>3000D4I CK
+DTSTART;TZID=Europe/Amsterdam:20160415T213000
+DTEND;TZID=Europe/Amsterdam:20160415T233000
+LOCATION:Universitair SC<br>Einsteinweg 6<br>2333CC Leiden
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Vincent van den Houte
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Vincent van den Houte
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20180221T125626CET-8591I46CDr@www.skcvolleybal.nl
+DTSTAMP:20180221T115626Z
+DESCRIPTION:SKC HS 6 - VCS HS 5<br>3000H4G FJ
+DTSTART;TZID=Europe/Amsterdam:20180324T110000
+DTEND;TZID=Europe/Amsterdam:20180324T130000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

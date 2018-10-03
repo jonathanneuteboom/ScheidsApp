@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Rutger van Bokhorst
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Rutger van Bokhorst
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20180228T222934CET-1793sjvMcH@www.skcvolleybal.nl
+DTSTAMP:20180228T212934Z
+DESCRIPTION:SKC DS 2 - Kratos '08 DS 3<br>3000D1E IF
+DTSTART;TZID=Europe/Amsterdam:20180406T193000
+DTEND;TZID=Europe/Amsterdam:20180406T213000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+BEGIN:VEVENT
+UID:20180228T222934CET-1796MHVbDG@www.skcvolleybal.nl
+DTSTAMP:20180228T212934Z
+DESCRIPTION:SKC DS 4 - Setumup DS 1<br>3000D2I HE
+DTSTART;TZID=Europe/Amsterdam:20180420T193000
+DTEND;TZID=Europe/Amsterdam:20180420T213000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+BEGIN:VEVENT
+UID:20180228T222934CET-1799KmTBVD@www.skcvolleybal.nl
+DTSTAMP:20180228T212934Z
+DESCRIPTION:SKC HS 3 - Leython DC HS 4<br>3000H2I LC
+DTSTART;TZID=Europe/Amsterdam:20180317T163000
+DTEND;TZID=Europe/Amsterdam:20180317T183000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.skcvolleybal.nl//NONSGML kigkonsult.se iCalcreator 2.20.2//
+METHOD:PUBLISH
+X-WR-CALNAME:Scheidsrooster Sanne Kampstra
+X-WR-CALDESC:Alle wedstrijden die jij moet fluiten in een google calendar a
+ ccount\, aangeboden door de (Binkies van de) Webcie.
+X-WR-RELCALID:Scheidsrooster Sanne Kampstra
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VEVENT
+UID:20170329T103656CEST-2685jp1Kmd@www.skcvolleybal.nl
+DTSTAMP:20170329T083656Z
+DESCRIPTION:SKC DS 7 - PQV Pijl Solutions DS 5<br>3000D4I BL
+DTSTART;TZID=Europe/Amsterdam:20170331T193000
+DTEND;TZID=Europe/Amsterdam:20170331T213000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+BEGIN:VEVENT
+UID:20170329T103656CEST-2687tJlDBU@www.skcvolleybal.nl
+DTSTAMP:20170329T083656Z
+DESCRIPTION:SKC HS 5 - RVV HS 3<br>3000H4G LG
+DTSTART;TZID=Europe/Amsterdam:20170407T213000
+DTEND;TZID=Europe/Amsterdam:20170407T233000
+SUMMARY:Wedstrijden Fluiten
+END:VEVENT
+END:VCALENDAR

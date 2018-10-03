@@ -1,0 +1,44 @@
+<table>
+  <tr ng-repeat="(date, tijden) in telschema">
+    <td>
+      <table>
+        <tr ng-repeat="(time, codes) in tijden" class="data-table">
+          <td>
+            <div>{{date}}@{{time}}</div>
+          </td>
+          <td>
+            <table>
+              <tr ng-repeat="(code, wedstrijd) in codes">
+                <td>
+                  {{wedstrijd.teams}}
+                  <i>({{code}})</i>
+                </td>
+                <td style="width :300px;">
+                  <lx-select ng-model="wedstrijd.tellers" change="saveTellers(date, time, code, newValue)" placeholder="Kies team..." choices="teloverzicht"
+                    floating-label>
+                    <lx-select-selected>
+                      {{ $selected.team }}
+                    </lx-select-selected>
+                    <lx-select-choices>
+                      {{ $choice.team + ' (' + $choice.geteld + ')' }}
+                    </lx-select-choices>
+                  </lx-select>
+                </td>
+                <td style="padding: 10px;">
+                  <div ng-show="wedstrijd.tellers == null" class="card bgc-red-500 tc-white-1 p">
+                    Nog geen tellers...
+                  </div>
+                  <div ng-show="wedstrijd.tellers != null">
+                    <button class="btn btn--lg btn--raised btn--white delete-button" ng-click="delTellers(date, time, code)" lx-ripple>
+                      <i class="mdi mdi-delete"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
