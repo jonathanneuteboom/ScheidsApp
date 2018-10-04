@@ -83,7 +83,7 @@ function GetTelOverzichtPerTeam($dbc)
     $stmt = $dbc->prepare("SELECT G.title as teamnaam, count(G.title) as count
                            FROM ScheidsApp_matches M
                            INNER JOIN J3_usergroups G ON M.telteam_id = G.id
-                           GROUP BY tellers");
+                           GROUP BY G.title");
     if (!$stmt->execute()) {
         echo "Error:";
         exit(print_r($stmt->errorInfo()));

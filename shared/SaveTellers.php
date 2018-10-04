@@ -36,7 +36,7 @@ $row = $stmt->fetch();
 $teamId = $row['id'];
 
 $stmt = $dbc->prepare("INSERT INTO ScheidsApp_matches
-                       (date, time, code, tellers, user_id)
+                       (date, time, code, telteam_id, user_id)
                        VALUES (:date, :time, :code, :telteamId, NULL)
                        ON DUPLICATE KEY UPDATE telteam_id = :telteamId");
 
