@@ -20,7 +20,10 @@
   $matches = GetMatches();
   
   // Get all the availabilities for all the matches
-  $stmt = $dbc->prepare("SELECT * FROM ScheidsApp_matches WHERE date >= CURDATE()");
+  $stmt = $dbc->prepare("SELECT M.id, M.date, M.time, M.code, M.user_id, G.title as tellers
+                         FROM ScheidsApp_matches M
+                         LEFT JOIN J3_usergroups G ON G.id = M.telteam_id
+                         WHERE date >= CURDATE()");
   if (!$stmt->execute()){
 		echo "Error:";
     print_r($stmt->errorInfo());

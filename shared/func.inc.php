@@ -80,9 +80,9 @@ function GetTeams()
 
 function GetTelOverzichtPerTeam($dbc)
 {
-    $stmt = $dbc->prepare("SELECT tellers as teamnaam, count(tellers) as count
-                           FROM ScheidsApp_matches
-                           WHERE tellers IS NOT NULL
+    $stmt = $dbc->prepare("SELECT G.title as teamnaam, count(G.title) as count
+                           FROM ScheidsApp_matches M
+                           INNER JOIN J3_usergroups G ON M.telteam_id = G.id
                            GROUP BY tellers");
     if (!$stmt->execute()) {
         echo "Error:";
@@ -296,7 +296,9 @@ function GetReferees($dbc)
 
 function GetScheduledRefsAndTellersForNextWeek($dbc)
 {
-    $stmt = $dbc->prepare("SELECT * FROM ScheidsApp_matches
+    $stmt = $dbc->prepare("SELECT M.id, M.date, M.code, M.user_id, G.title as tellers
+                           FROM ScheidsApp_matches M
+                           LEFT JOIN J3_usergroups G ON M.telteam_id = G.id
                            WHERE date >= CURDATE() and
                                  date < DATE_ADD(NOW(), INTERVAL 7 DAY)");
 
@@ -325,7 +327,9 @@ function CheckMatches($dbc)
 
 function GetScheduledMatches($dbc)
 {
-    $stmt = $dbc->prepare("SELECT * FROM ScheidsApp_matches
+    $stmt = $dbc->prepare("SELECT M.id, M.date, M.time, M.code, M.user_id, G.title as tellers
+                           FROM ScheidsApp_matches M
+                           LEFT JOIN J3_usergroups G ON G.id = M.telteam_id
                            WHERE date >= CURDATE()");
 
     if (!$stmt->execute()) {
@@ -485,8 +489,9 @@ function GetResults($dbc, $url = "https://api.nevobo.nl/export/sporthal/LDNUN/re
         $results[$code]['teams'] = $match;
     }
 
-    $stmt = $dbc->prepare("SELECT *
-                           FROM ScheidsApp_matches
+    $stmt = $dbc->prepare("SELECT M.id, M.date, M.time, M.code, M.user_id, G.title as tellers
+                           FROM ScheidsApp_matches M
+                           LEFT JOIN J3_usergroups G ON M.telteam_id = G.id
                            WHERE date < CURDATE()");
 
     if (!$stmt->execute()) {
@@ -563,8 +568,9 @@ function SetGoogleCalendars($dbc, $user_id)
 
     $matches = GetMatches();
 
-    $stmt = $dbc->prepare("SELECT *
-                           FROM ScheidsApp_matches
+    $stmt = $dbc->prepare("SELECT M.id, M.date, M.time, M.code, M.user_id, G.title as tellers
+                           FROM ScheidsApp_matches M
+                           LEFT JOIN J3_usergroups G ON M.telteam_id = G.id
                            WHERE user_id = :user_id and
                            date >= CURDATE()");
 
@@ -650,7 +656,10 @@ function GetTeamMembers($dbc, $team)
 
 function GetTelSchema($dbc)
 {
-    $stmt = $dbc->prepare("SELECT * FROM ScheidsApp_matches WHERE date >= CURDATE() and tellers IS NOT NULL");
+    $stmt = $dbc->prepare("SELECT M.id, M.date, M.time, M.code, M.user_id, G.title as tellers
+                           FROM ScheidsApp_matches M
+                           INNER JOIN J3_usergroups G ON M.telteam_id = G.id
+                           WHERE date >= CURDATE()");
     if (!$stmt->execute()) {
         echo "Error:";
         print_r($stmt->errorInfo());
@@ -739,8 +748,9 @@ function WriteScheduleToExcel($dbc, $user_id, $user_name)
     $objPHPExcel->getActiveSheet()->SetCellValue('B1', 'Tijd');
     $objPHPExcel->getActiveSheet()->SetCellValue('C1', 'Wedstrijdcode');
     $objPHPExcel->getActiveSheet()->SetCellValue('D1', 'Scheidsrechter');
-    $stmt = $dbc->prepare("SELECT *
-                           FROM ScheidsApp_matches
+    $stmt = $dbc->prepare("SELECT M.id, M.date, M.time, M.code, M.user_id, G.title as tellers
+                           FROM ScheidsApp_matches M
+                           LEFT JOIN J3_usergroups G ON M.telteam_id = G.id
                            WHERE user_id IS NOT NULL and date < CURDATE()
                            ORDER BY date ASC, time ASC, code ASC");
 
